@@ -13,11 +13,15 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         label1.text = SwiftClassInStaticModule().someString
         label2.text = SwiftClassInStaticModule().stringFromObjcClass
+        
+        label3.text = ObjcClassInStaticModule().someOtherString
     }
 
     override func didReceiveMemoryWarning() {
