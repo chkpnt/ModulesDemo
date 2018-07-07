@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,17 +26,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9TF-pK-gIr">
+                                <rect key="frame" x="16" y="207" width="351" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jLh-EV-9TV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="11M-Ac-tqs"/>
+                            <constraint firstItem="9TF-pK-gIr" firstAttribute="top" secondItem="jLh-EV-9TV" secondAttribute="bottom" constant="16" id="FSv-3Y-sjt"/>
                             <constraint firstItem="jLh-EV-9TV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="16" id="IRW-Ce-6t6"/>
+                            <constraint firstItem="9TF-pK-gIr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="T6D-Ay-OGY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9TF-pK-gIr" secondAttribute="trailingMargin" constant="16" id="jC5-8c-uca"/>
                             <constraint firstItem="jLh-EV-9TV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="zIA-e7-gRm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="label" destination="jLh-EV-9TV" id="UkY-82-ftS"/>
+                        <outlet property="label1" destination="jLh-EV-9TV" id="fll-QL-3u7"/>
+                        <outlet property="label2" destination="9TF-pK-gIr" id="hu0-qe-JUo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

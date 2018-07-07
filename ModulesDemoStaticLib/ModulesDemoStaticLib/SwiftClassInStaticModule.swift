@@ -8,7 +8,9 @@
 
 public class SwiftClassInStaticModule {
 
-    public let someString: String = "This string is defined in Swift-Class in ModulesDemoStaticLib"
+    public let someString: String = "This string is defined in a Swift class in ModulesDemoStaticLib"
+    
+    public let stringFromObjcClass: String = ObjcClassInStaticModule().someOtherString
     
     public init() {}
     

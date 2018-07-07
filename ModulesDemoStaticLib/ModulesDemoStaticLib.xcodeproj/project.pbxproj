@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		54F3E3EF20F15FEF00059205 /* SwiftClassInStaticModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F3E3EE20F15FEF00059205 /* SwiftClassInStaticModule.swift */; };
+		54F3E3FA20F168AE00059205 /* ObjcClassInStaticModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F3E3F920F168AE00059205 /* ObjcClassInStaticModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		54F3E3EB20F15FEF00059205 /* libModulesDemoStaticLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libModulesDemoStaticLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F3E3EE20F15FEF00059205 /* SwiftClassInStaticModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftClassInStaticModule.swift; sourceTree = "<group>"; };
+		54F3E3F820F168AE00059205 /* ModulesDemoStaticLib-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModulesDemoStaticLib-Bridging-Header.h"; sourceTree = "<group>"; };
+		54F3E3F920F168AE00059205 /* ObjcClassInStaticModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcClassInStaticModule.m; sourceTree = "<group>"; };
+		54F3E3FB20F1691F00059205 /* ObjcClassInStaticModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcClassInStaticModule.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				54F3E3EE20F15FEF00059205 /* SwiftClassInStaticModule.swift */,
+				54F3E3FB20F1691F00059205 /* ObjcClassInStaticModule.h */,
+				54F3E3F920F168AE00059205 /* ObjcClassInStaticModule.m */,
+				54F3E3F820F168AE00059205 /* ModulesDemoStaticLib-Bridging-Header.h */,
 			);
 			path = ModulesDemoStaticLib;
 			sourceTree = "<group>";
@@ -94,6 +101,7 @@
 				TargetAttributes = {
 					54F3E3EA20F15FEF00059205 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -120,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54F3E3EF20F15FEF00059205 /* SwiftClassInStaticModule.swift in Sources */,
+				54F3E3FA20F168AE00059205 /* ObjcClassInStaticModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,11 +252,19 @@
 		54F3E3F320F15FEF00059205 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ModulesDemoStaticLib/ModulesDemoStaticLib-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -256,11 +273,18 @@
 		54F3E3F420F15FEF00059205 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ModulesDemoStaticLib/ModulesDemoStaticLib-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

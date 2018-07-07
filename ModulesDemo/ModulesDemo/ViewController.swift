@@ -11,11 +11,13 @@ import ModulesDemoStaticLib
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = SwiftClassInStaticModule().someString
+        label1.text = SwiftClassInStaticModule().someString
+        label2.text = SwiftClassInStaticModule().stringFromObjcClass
     }
 
     override func didReceiveMemoryWarning() {
