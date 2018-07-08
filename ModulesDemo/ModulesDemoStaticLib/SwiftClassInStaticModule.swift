@@ -6,11 +6,15 @@
 //  Copyright © 2018 Gregor Dschung. All rights reserved.
 //
 
+import PrivateModule
+
 public class SwiftClassInStaticModule {
 
     public let someString: String = "This string is defined in a Swift class in ModulesDemoStaticLib"
     
     public let stringFromObjcClass: String = ObjcClassInStaticModule().someOtherString
+    
+    public let stringFromThirdPartyLib: String = String(cString: someThirdPartyString)
     
     public init() {}
     

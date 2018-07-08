@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5411BD3120F19EB7006FEF44 /* SwiftClassInStaticModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5411BD2E20F19EB7006FEF44 /* SwiftClassInStaticModule.swift */; };
 		5411BD3220F19EB7006FEF44 /* ObjcClassInStaticModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 5411BD3020F19EB7006FEF44 /* ObjcClassInStaticModule.m */; };
 		5411BD3320F19EF3006FEF44 /* libModulesDemoStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5411BD2620F19EA8006FEF44 /* libModulesDemoStaticLib.a */; };
+		5411BD3E20F1B66E006FEF44 /* SwiftClassInStaticModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5411BD2E20F19EB7006FEF44 /* SwiftClassInStaticModule.swift */; };
 		54F3E3D120F15E2600059205 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F3E3D020F15E2600059205 /* AppDelegate.swift */; };
 		54F3E3D320F15E2600059205 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F3E3D220F15E2600059205 /* ViewController.swift */; };
 		54F3E3D620F15E2600059205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F3E3D420F15E2600059205 /* Main.storyboard */; };
 		54F3E3D820F15E2800059205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F3E3D720F15E2800059205 /* Assets.xcassets */; };
 		54F3E3DB20F15E2800059205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F3E3D920F15E2800059205 /* LaunchScreen.storyboard */; };
+		86BF39BACFCDBECF93BCF838 /* Pods_ModulesDemoStaticLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E4D02E18AA77E499043157 /* Pods_ModulesDemoStaticLib.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5411BD3920F1A957006FEF44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54F3E3C520F15E2600059205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5411BD2520F19EA8006FEF44;
+			remoteInfo = ModulesDemoStaticLib;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5411BD2420F19EA8006FEF44 /* CopyFiles */ = {
@@ -30,11 +41,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		09E4D02E18AA77E499043157 /* Pods_ModulesDemoStaticLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModulesDemoStaticLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29488FAE11984834CC61F8DE /* Pods-ModulesDemoStaticLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModulesDemoStaticLib.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ModulesDemoStaticLib/Pods-ModulesDemoStaticLib.release.xcconfig"; sourceTree = "<group>"; };
 		5411BD2620F19EA8006FEF44 /* libModulesDemoStaticLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libModulesDemoStaticLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5411BD2D20F19EB6006FEF44 /* ModulesDemoStaticLib-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModulesDemoStaticLib-Bridging-Header.h"; sourceTree = "<group>"; };
 		5411BD2E20F19EB7006FEF44 /* SwiftClassInStaticModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftClassInStaticModule.swift; sourceTree = "<group>"; };
 		5411BD2F20F19EB7006FEF44 /* ObjcClassInStaticModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcClassInStaticModule.h; sourceTree = "<group>"; };
 		5411BD3020F19EB7006FEF44 /* ObjcClassInStaticModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcClassInStaticModule.m; sourceTree = "<group>"; };
+		5411BD3820F1A6A7006FEF44 /* PrivateModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateModule.h; sourceTree = "<group>"; };
+		5411BD4320F21A0A006FEF44 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		54F3E3CD20F15E2600059205 /* ModulesDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModulesDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F3E3D020F15E2600059205 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54F3E3D220F15E2600059205 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +57,7 @@
 		54F3E3DA20F15E2800059205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54F3E3DC20F15E2800059205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54F3E3F620F1611700059205 /* libModulesDemoStaticLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libModulesDemoStaticLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD89ED500CE82D97BCE195C /* Pods-ModulesDemoStaticLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModulesDemoStaticLib.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ModulesDemoStaticLib/Pods-ModulesDemoStaticLib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86BF39BACFCDBECF93BCF838 /* Pods_ModulesDemoStaticLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,12 +83,21 @@
 		5411BD2720F19EA8006FEF44 /* ModulesDemoStaticLib */ = {
 			isa = PBXGroup;
 			children = (
+				5411BD4220F219E7006FEF44 /* PrivateModule */,
 				5411BD2E20F19EB7006FEF44 /* SwiftClassInStaticModule.swift */,
 				5411BD2F20F19EB7006FEF44 /* ObjcClassInStaticModule.h */,
 				5411BD3020F19EB7006FEF44 /* ObjcClassInStaticModule.m */,
-				5411BD2D20F19EB6006FEF44 /* ModulesDemoStaticLib-Bridging-Header.h */,
 			);
 			path = ModulesDemoStaticLib;
+			sourceTree = "<group>";
+		};
+		5411BD4220F219E7006FEF44 /* PrivateModule */ = {
+			isa = PBXGroup;
+			children = (
+				5411BD3820F1A6A7006FEF44 /* PrivateModule.h */,
+				5411BD4320F21A0A006FEF44 /* module.modulemap */,
+			);
+			path = PrivateModule;
 			sourceTree = "<group>";
 		};
 		54F3E3C420F15E2600059205 = {
@@ -82,6 +107,7 @@
 				5411BD2720F19EA8006FEF44 /* ModulesDemoStaticLib */,
 				54F3E3CE20F15E2600059205 /* Products */,
 				54F3E3F520F1611700059205 /* Frameworks */,
+				5A93315E15D23D53D85B65F6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,8 +137,18 @@
 			isa = PBXGroup;
 			children = (
 				54F3E3F620F1611700059205 /* libModulesDemoStaticLib.a */,
+				09E4D02E18AA77E499043157 /* Pods_ModulesDemoStaticLib.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A93315E15D23D53D85B65F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CD89ED500CE82D97BCE195C /* Pods-ModulesDemoStaticLib.debug.xcconfig */,
+				29488FAE11984834CC61F8DE /* Pods-ModulesDemoStaticLib.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5411BD2C20F19EA8006FEF44 /* Build configuration list for PBXNativeTarget "ModulesDemoStaticLib" */;
 			buildPhases = (
+				34859B0F03FA833A8A4A7004 /* [CP] Check Pods Manifest.lock */,
 				5411BD2220F19EA8006FEF44 /* Sources */,
 				5411BD2320F19EA8006FEF44 /* Frameworks */,
 				5411BD2420F19EA8006FEF44 /* CopyFiles */,
+				14D39E3506C3B722A681D75B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +184,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5411BD3A20F1A957006FEF44 /* PBXTargetDependency */,
 			);
 			name = ModulesDemo;
 			productName = ModulesDemo;
@@ -202,13 +241,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14D39E3506C3B722A681D75B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ModulesDemoStaticLib/Pods-ModulesDemoStaticLib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34859B0F03FA833A8A4A7004 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ModulesDemoStaticLib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5411BD2220F19EA8006FEF44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5411BD3220F19EB7006FEF44 /* ObjcClassInStaticModule.m in Sources */,
-				5411BD3120F19EB7006FEF44 /* SwiftClassInStaticModule.swift in Sources */,
+				5411BD3E20F1B66E006FEF44 /* SwiftClassInStaticModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +297,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5411BD3A20F1A957006FEF44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5411BD2520F19EA8006FEF44 /* ModulesDemoStaticLib */;
+			targetProxy = 5411BD3920F1A957006FEF44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		54F3E3D420F15E2600059205 /* Main.storyboard */ = {
@@ -245,13 +328,15 @@
 /* Begin XCBuildConfiguration section */
 		5411BD2A20F19EA8006FEF44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CD89ED500CE82D97BCE195C /* Pods-ModulesDemoStaticLib.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ModulesDemoStaticLib/ModulesDemoStaticLib-Bridging-Header.h";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/ModulesDemoStaticLib/PrivateModule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -259,13 +344,15 @@
 		};
 		5411BD2B20F19EA8006FEF44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29488FAE11984834CC61F8DE /* Pods-ModulesDemoStaticLib.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ModulesDemoStaticLib/ModulesDemoStaticLib-Bridging-Header.h";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/ModulesDemoStaticLib/PrivateModule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

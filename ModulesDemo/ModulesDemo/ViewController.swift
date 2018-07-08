@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 import ModulesDemoStaticLib
 
 class ViewController: UIViewController {
@@ -17,11 +18,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         label1.text = SwiftClassInStaticModule().someString
         label2.text = SwiftClassInStaticModule().stringFromObjcClass
-        
-        label3.text = ObjcClassInStaticModule().someOtherString
+        label3.text = SwiftClassInStaticModule().stringFromThirdPartyLib
     }
 
     override func didReceiveMemoryWarning() {

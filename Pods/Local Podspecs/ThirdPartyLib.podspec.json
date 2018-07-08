@@ -1,0 +1,23 @@
+{
+  "name": "ThirdPartyLib",
+  "version": "1.0.0",
+  "summary": "A static lib which contains a string",
+  "description": "ThirdPartyLib gives access to a string",
+  "homepage": "https://github.com/chkpnt",
+  "license": {
+    "type": "Copyright",
+    "text": "    Copyright 2018 Gregor Dschung. All rights reserved.\n"
+  },
+  "authors": "Gregor Dschung",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "static_framework": true,
+  "source": {
+    "path": "."
+  },
+  "source_files": "includes/public/*.h",
+  "vendored_libraries": [
+    "libraries/libThirdParty.a"
+  ]
+}

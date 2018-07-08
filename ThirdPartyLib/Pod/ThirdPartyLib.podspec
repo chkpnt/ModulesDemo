@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.authors      = "Gregor Dschung"
   s.platform     = :ios, "8.0"
 
+  s.static_framework = true
   s.source       = { :path => '.' }
   s.source_files  = "includes/public/*.h"
   s.vendored_libraries = [

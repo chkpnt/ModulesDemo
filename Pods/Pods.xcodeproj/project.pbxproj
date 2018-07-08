@@ -22,7 +22,10 @@
 		71A438E0D4AE98CBE7DB65347BAFB66C /* Pods-ModulesDemoStaticLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModulesDemoStaticLib.debug.xcconfig"; sourceTree = "<group>"; };
 		84DD8757F771B9FD333FED837FE19FB5 /* Pods_ModulesDemoStaticLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ModulesDemoStaticLib.framework; path = "Pods-ModulesDemoStaticLib.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1FAC6FF41B24667E00B320BEC67A26 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E6E08FF9BCB65874580DA2162701671 /* ThirdPartyLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ThirdPartyLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2BFB6AD5AC1B8F615801ED7AA7C0BBB /* libThirdParty.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libThirdParty.a; path = libraries/libThirdParty.a; sourceTree = "<group>"; };
+		A55431D9273012FB04E2FA517BF07444 /* libThirdParty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libThirdParty.h; path = includes/public/libThirdParty.h; sourceTree = "<group>"; };
 		C5E896E97184BCD83C322AE09CB87275 /* Pods-ModulesDemoStaticLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ModulesDemoStaticLib.modulemap"; sourceTree = "<group>"; };
 		D3406C9851FADEF3891BF78E91A9B650 /* Pods-ModulesDemoStaticLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModulesDemoStaticLib.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +59,14 @@
 			path = "Target Support Files/Pods-ModulesDemoStaticLib";
 			sourceTree = "<group>";
 		};
+		50FFD260A5DCE5BA2336EE6482DE6E77 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8E6E08FF9BCB65874580DA2162701671 /* ThirdPartyLib.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		675223E9A79493E468B90F9387CA2E0D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,20 +75,48 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		78A16B43686DC6E293EC2249699A73FA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC17836628338A62AA12B93DB832890B /* ThirdPartyLib */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				78A16B43686DC6E293EC2249699A73FA /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				FBAF5D58E557B4EE13B857B3E5B10A8D /* Products */,
 				675223E9A79493E468B90F9387CA2E0D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
+		AC17836628338A62AA12B93DB832890B /* ThirdPartyLib */ = {
+			isa = PBXGroup;
+			children = (
+				A55431D9273012FB04E2FA517BF07444 /* libThirdParty.h */,
+				BE832589F4841E76B43E85266FA443C5 /* Frameworks */,
+				50FFD260A5DCE5BA2336EE6482DE6E77 /* Pod */,
+			);
+			name = ThirdPartyLib;
+			path = ../ThirdPartyLib/Pod;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE832589F4841E76B43E85266FA443C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2BFB6AD5AC1B8F615801ED7AA7C0BBB /* libThirdParty.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

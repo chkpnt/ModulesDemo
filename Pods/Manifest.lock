@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: d061788a3658ee1dd5431bfc86fa7b8da1d3cb5e
+PODS:
+  - ThirdPartyLib (1.0.0)
+
+DEPENDENCIES:
+  - ThirdPartyLib (from `ThirdPartyLib/Pod`)
+
+EXTERNAL SOURCES:
+  ThirdPartyLib:
+    :path: ThirdPartyLib/Pod
+
+SPEC CHECKSUMS:
+  ThirdPartyLib: 4b8f38822af63914664b0c1e4930cad2e7f9c744
+
+PODFILE CHECKSUM: 2743bde552dac827b6116288928e163a4cf93b12
 
 COCOAPODS: 1.4.0

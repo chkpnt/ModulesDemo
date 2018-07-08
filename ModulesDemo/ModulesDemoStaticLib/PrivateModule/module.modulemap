@@ -1,0 +1,4 @@
+module PrivateModule {
+    umbrella header "PrivateModule.h"
+    export *
+}
