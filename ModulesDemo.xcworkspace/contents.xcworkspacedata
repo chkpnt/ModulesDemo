@@ -5,9 +5,6 @@
       location = "group:ModulesDemo/ModulesDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ModulesDemoStaticLib/ModulesDemoStaticLib.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
