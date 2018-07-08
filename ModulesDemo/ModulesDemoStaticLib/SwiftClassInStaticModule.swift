@@ -6,7 +6,7 @@
 //  Copyright © 2018 Gregor Dschung. All rights reserved.
 //
 
-import PrivateModule
+import ModulesDemoStaticLibPrivate
 
 public class SwiftClassInStaticModule {
 

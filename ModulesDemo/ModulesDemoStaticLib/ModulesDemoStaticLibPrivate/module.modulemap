@@ -1,0 +1,7 @@
+// Not really private yet. This module can be imported from the application as well.
+// Maybe, MODULEMAP_PRIVATE_FILE has to be used...
+
+module ModulesDemoStaticLibPrivate {
+    umbrella header "PrivateModule.h"
+    export *
+}

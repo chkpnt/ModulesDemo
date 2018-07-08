@@ -83,7 +83,7 @@
 		5411BD2720F19EA8006FEF44 /* ModulesDemoStaticLib */ = {
 			isa = PBXGroup;
 			children = (
-				5411BD4220F219E7006FEF44 /* PrivateModule */,
+				5411BD4220F219E7006FEF44 /* ModulesDemoStaticLibPrivate */,
 				5411BD2E20F19EB7006FEF44 /* SwiftClassInStaticModule.swift */,
 				5411BD2F20F19EB7006FEF44 /* ObjcClassInStaticModule.h */,
 				5411BD3020F19EB7006FEF44 /* ObjcClassInStaticModule.m */,
@@ -91,13 +91,13 @@
 			path = ModulesDemoStaticLib;
 			sourceTree = "<group>";
 		};
-		5411BD4220F219E7006FEF44 /* PrivateModule */ = {
+		5411BD4220F219E7006FEF44 /* ModulesDemoStaticLibPrivate */ = {
 			isa = PBXGroup;
 			children = (
 				5411BD3820F1A6A7006FEF44 /* PrivateModule.h */,
 				5411BD4320F21A0A006FEF44 /* module.modulemap */,
 			);
-			path = PrivateModule;
+			path = ModulesDemoStaticLibPrivate;
 			sourceTree = "<group>";
 		};
 		54F3E3C420F15E2600059205 = {
@@ -336,7 +336,7 @@
 				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/ModulesDemoStaticLib/PrivateModule";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/ModulesDemoStaticLib/ModulesDemoStaticLibPrivate \"${PODS_ROOT}/Headers/Public/ThirdPartyLib\"";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -352,7 +352,7 @@
 				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/ModulesDemoStaticLib/PrivateModule";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/ModulesDemoStaticLib/ModulesDemoStaticLibPrivate \"${PODS_ROOT}/Headers/Public/ThirdPartyLib\"";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
