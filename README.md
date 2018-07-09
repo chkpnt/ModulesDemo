@@ -1,4 +1,4 @@
-# Using 3rd party vendored libs from an static framework written in Swift
+# Using 3rd party vendored libs from a static framework written in Swift
 
 If you are using an application target, you can simply use a bridging header to access a 3rd party library.
 But if you want to wrap that 3rd party library in a static framework, you have to take a different approach.
